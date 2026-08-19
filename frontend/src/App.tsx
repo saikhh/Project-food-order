@@ -1,6 +1,7 @@
 
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom' 
-import {AuthProvider} from './context/AuthContext'
+// @ts-expect-error AuthContext is a JavaScript module without TypeScript declarations.
+import {AuthProvider} from './context/AuthContext.jsx'
 import Register from './components/Register.jsx';
 import Login from './components/Login.jsx';
 import UserProfile from './components/UserProfile.jsx';
